@@ -13,12 +13,15 @@ else:
 
 #Create Working Directory
 
-Folder = raw_input("Enter Folder Name")
+Folder = raw_input("Enter Folder Name:")
 
 print "Creating Working Directory"
 print "--------------------------"
 
-os.system("mkdir ~/Desktop/ " + Folder)
+createdir = os.system("mkdir ~/Desktop/" + Folder)
+
+if createdir == 0:
+    print "Directory Created"
 
 print "Directory Created"
 
