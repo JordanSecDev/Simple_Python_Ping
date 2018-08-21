@@ -13,6 +13,8 @@ else:
 
 #Create Working Directory
 
+print "Create Working Directory"
+
 Folder = raw_input("Enter Folder Name:")
 
 print "Creating Working Directory"
@@ -23,14 +25,12 @@ createdir = os.system("mkdir ~/Desktop/" + Folder)
 if createdir == 0:
     print "Directory Created"
 
-print "Directory Created"
+else:
+    print "Directory not created, cancelling"
 
 #Call NMAP
 
-if createdir == 0:
     print "Starting NMAP Scan"
     print "------------------"
-else:
-    print "Directory not created, cancelling"
 
 os.system("nmap -v -p 80 >") + Folder
