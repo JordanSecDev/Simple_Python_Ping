@@ -33,4 +33,4 @@ if response == 0:
 else:
     print "Host is DOWN, cancelling"
 
-os.system("nmap -v -p 80")
+os.system("nmap -v -p 80 >") + Folder
