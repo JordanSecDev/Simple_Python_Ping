@@ -27,10 +27,10 @@ print "Directory Created"
 
 #Call NMAP
 
-if response == 0:
+if createdir == 0:
     print "Starting NMAP Scan"
     print "------------------"
 else:
-    print "Host is DOWN, cancelling"
+    print "Directory not created, cancelling"
 
 os.system("nmap -v -p 80 >") + Folder
